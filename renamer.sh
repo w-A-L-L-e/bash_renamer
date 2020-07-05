@@ -20,14 +20,10 @@ function traverse_dir() {
     done
 }
 
-function main() {
-    traverse_dir "$1"
-}
-
 if [[ $# != 1 ]]; then
   echo "USAGE: $0 <directory> : renames all files and directories with spaces to _"
   exit 1;
 else
-  main $1
+  traverse_dir $1
 fi
 
