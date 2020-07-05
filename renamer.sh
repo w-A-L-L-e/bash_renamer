@@ -1,4 +1,6 @@
 #!/bin/bash
+# author: Walter Schreppers
+# description: recursive bash script to rename all files and directories with spaces
 
 
 function traverse_dir() {
