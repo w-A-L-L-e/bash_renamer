@@ -8,10 +8,9 @@ function traverse_dir() {
       renamed_path=`echo ${path} | sed -e 's/ /_/g'` #replace space with _
 
       if [[ "$path" != "$renamed_path" ]]; then
-        echo "found spaces in ${1}/${file} renaming to ${renamed_path}"
+        echo -n "found spaces in ${path} renaming to ${renamed_path}... "
         mv "${path}" "${renamed_path}"
-      else
-        echo "skipping rename for ${renamed_path}"
+        echo "done"
       fi
 
       if [[ -d ${renamed_path} ]]; then

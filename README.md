@@ -29,13 +29,11 @@ testcase
 
 3 directories, 4 files
 ./renamer.sh testcase
-found spaces in testcase/dir 1 renaming to testcase/dir_1
-found spaces in testcase/dir_1/file with spaces.txt renaming to testcase/dir_1/file_with_spaces.txt
-skipping rename for testcase/dir2
-found spaces in testcase/dir2/direct three renaming to testcase/dir2/direct_three
-found spaces in testcase/dir2/direct_three/file vierde.txt renaming to testcase/dir2/direct_three/file_vierde.txt
-skipping rename for testcase/dir2/gewonefile
-found spaces in testcase/dir2/tweede file.txt renaming to testcase/dir2/tweede_file.txt
+found spaces in testcase/dir 1 renaming to testcase/dir_1... done
+found spaces in testcase/dir_1/file with spaces.txt renaming to testcase/dir_1/file_with_spaces.txt... done
+found spaces in testcase/dir2/direct three renaming to testcase/dir2/direct_three... done
+found spaces in testcase/dir2/direct_three/file vierde.txt renaming to testcase/dir2/direct_three/file_vierde.txt... done
+found spaces in testcase/dir2/tweede file.txt renaming to testcase/dir2/tweede_file.txt... done
 after renamer has run testcase tree:
 testcase
 ├── dir2
@@ -47,7 +45,6 @@ testcase
     └── file_with_spaces.txt
 
 3 directories, 4 files
+
 ```
-
-
 
