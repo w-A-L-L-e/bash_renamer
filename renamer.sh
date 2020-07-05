@@ -2,12 +2,12 @@
 # author: Walter Schreppers
 # description: recursive bash script to rename all files and directories with spaces
 
-
 function traverse_dir() {
     ls -1 "$1" | while read file;
     do
       path=${1}/${file}
-      renamed_path=`echo ${path} | sed -e 's/ /_/g'` #replace space with _
+      # replace space with _
+      renamed_path=`echo ${path} | sed -e 's/ /_/g'` 
 
       if [[ "$path" != "$renamed_path" ]]; then
         echo -n "found spaces in ${path} renaming to ${renamed_path}... "
