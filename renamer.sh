@@ -6,8 +6,7 @@ function traverse_dir() {
     ls -1 "$1" | while read file;
     do
       path=${1}/${file}
-      # replace space with _
-      renamed_path=`echo ${path} | sed -e 's/ /_/g'` 
+      renamed_path=`echo ${path} | sed -e 's/ /_/g'` # replace _ with - or . or whatever you want as space replacement here
 
       if [[ "$path" != "$renamed_path" ]]; then
         echo -n "found spaces in ${path} renaming to ${renamed_path}... "
